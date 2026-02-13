@@ -1,0 +1,5 @@
+{
+  "name": "Puli Meka - Tiger & Goat Strategy",
+  "description": "A traditional strategy board game where Goats try to trap Tigers while Tigers try to capture Goats. Features PvP and PvE modes with varying difficulty levels.",
+  "requestFramePermissions": []
+}
