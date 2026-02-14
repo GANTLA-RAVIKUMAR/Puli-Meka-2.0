@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Palette, BookOpen, RefreshCw, Users, Monitor, ChevronRight, Swords } from 'lucide-react';
+import { X, Palette, BookOpen, RefreshCw, Users, Monitor, Coffee, Instagram, Mail } from 'lucide-react';
 import { GameConfig, Difficulty } from '../types';
 import { AI_PROFILES } from '../constants';
 
@@ -126,6 +126,42 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, config, setConfig, onReset
                     <RefreshCw className="w-5 h-5" />
                     <span>Restart Game</span>
                 </button>
+            </section>
+
+            <hr className="border-slate-100" />
+
+            {/* Support & Connect */}
+            <section className="space-y-3">
+                <p className="text-xs font-black uppercase text-slate-400 tracking-widest mb-3">Support & Connect</p>
+                
+                <a 
+                    href="upi://pay?pa=gantlakumar@fifederal&pn=Puli%20Meka%20Support&cu=INR" 
+                    className="w-full flex items-center gap-4 p-4 rounded-xl bg-yellow-50 text-yellow-700 font-bold hover:bg-yellow-100 transition-colors"
+                >
+                    <Coffee className="w-5 h-5" />
+                    <div className="text-left">
+                        <div className="leading-none">Buy me a Coffee</div>
+                        <div className="text-[10px] font-normal mt-1 opacity-80">gantlakumar@fifederal</div>
+                    </div>
+                </a>
+
+                <a 
+                    href="https://instagram.com/ravi_kubera" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center gap-4 p-4 rounded-xl bg-pink-50 text-pink-600 font-bold hover:bg-pink-100 transition-colors"
+                >
+                    <Instagram className="w-5 h-5" />
+                    <span>@ravi_kubera</span>
+                </a>
+
+                 <a 
+                    href="mailto:gantlaravikumar@gmail.com?subject=Puli%20Meka%20Feedback" 
+                    className="w-full flex items-center gap-4 p-4 rounded-xl bg-sky-50 text-sky-600 font-bold hover:bg-sky-100 transition-colors"
+                >
+                    <Mail className="w-5 h-5" />
+                    <span>Send Feedback</span>
+                </a>
             </section>
           </div>
           
